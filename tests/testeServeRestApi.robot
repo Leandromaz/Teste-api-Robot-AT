@@ -5,13 +5,12 @@ Resource    ../resources/settings.robot
 
 
 *** Test Cases ***
+# robot -d ./Logs -i login  tests
 Realizar Login
     [tags]     login
-    Conectar na api serverest
-    Realizar login    leandromaz1988@gmail.com    leo123
-    
+    Realizar login       realizarLogin     leandromaz1988@gmail.com      leo1234   
 
+# robot -d ./Logs -i cadastrar_usuario  tests 
 Cadastrar Usuario  
-    [tags]    cadastrar_usuario
-    Conectar na api serverest    
-    Cadastrar Usuario    Mario Silva    mario@gmail.com   senha123   true
+    [tags]    cadastrar_usuario  
+    Cadastrar Usuario   cadastrarUsuario    Marcelo   Marcelo@gmail.com   senha1234   false

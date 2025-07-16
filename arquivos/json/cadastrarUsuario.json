@@ -1,6 +1,6 @@
-{
+{{
   "nome": "{nome}",
   "email": "{email}",
   "password": "{senha}",
-  "administrador": "{administrador}"
-}
+  "administrador": "{admin}"
+}}

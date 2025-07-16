@@ -4,31 +4,33 @@ Library    Collections
 Library    String
 Library    Datetime
 
+Resource    ../resources/settings.robot
+
 *** Variables***
-${URL_SERVERREST}    https://serverest.dev/
-${CAMINHO_LOGIN}    login
+${CAMINHO_CADASTRO_USUARIO}    usuarios
 
 *** Keywords ***
-#Conectar na api serverest
-   # Create Session    serverest    ${URL_SERVERREST}
 
-
-Realizar Login
-    [Arguments]    ${JSON}   ${EMAIL}    ${SENHA}
+Cadastrar Usuario
+   [Arguments]    ${JSON}      ${NOME}     ${EMAIL}    ${SENHA}    ${ADMIN}
 
     ${HEADERS}    Create Dictionary    Content-Type=application/json
     #Create Session    Login    ${URL_SERVERREST}    headers=${HEADERS}
 
     ${BODY}    Format String    ${EXECDIR}/arquivos/json/${JSON}.json
+    ...         nome=${NOME}
     ...         email=${EMAIL}
     ...         senha=${SENHA}
+    ...         admin=${ADMIN}
+    
 
     ${RESPONSE}     POST    
-    ...             url=${URL_SERVERREST}${CAMINHO_LOGIN}
+    ...             url=${URL_SERVERREST}${CAMINHO_CADASTRO_USUARIO}
     ...             data=${BODY}
     ...             headers=${HEADERS}
-    ...             expected_status=200
+    ...             expected_status=201
     
 
     Log    ${RESPONSE.json()}
+
 
