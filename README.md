@@ -24,8 +24,8 @@ Automatizar testes de API RESTful com foco em:
  
  🚀 Como Executar os Testes
 - Instale as dependências:
-pip install robotframework
-pip install robotframework-requests
+'''pip install robotframework'''
+'''pip install robotframework-requests'''
 
 - Execute os testes utilizando uma tag específica e salvando os relatórios na pasta Logs:
 robot -d ./Logs -i tag tests
@@ -35,7 +35,8 @@ robot -d ./Logs -i tag tests
 
 
 📊 Relatórios
-Após a execução, os arquivos report.html e log.html serão gerados automaticamente com os resultados detalhados dos testes(copie o link dos arquivos e abra no navegador.
+Após a execução, os arquivos report.html e log.html serão gerados automaticamente com os resultados detalhados dos testes(copie o link dos arquivos e abra no navegador)
+
 
 
 
