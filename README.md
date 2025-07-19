@@ -1,3 +1,5 @@
+# Teste-api-Robot-AT
+
 🧪 Teste API com Robot Framework
 Este projeto demonstra a automação de testes de API utilizando o Robot Framework, abordando três cenários distintos para validar funcionalidades e garantir a qualidade das respostas.
 
@@ -33,6 +35,10 @@ robot -d ./Logs -i tag tests
 
 
 📊 Relatórios
+Após a execução, os arquivos report.html e log.html serão gerados automaticamente com os resultados detalhados dos testes(copie o link dos arquivos e abra no navegador.
+
+
+
 Após a execução, os arquivos report.html e log.html serão gerados automaticamente com os resultados detalhados dos testes(copie o link dos arquivos e abra no navegador.
 
 
