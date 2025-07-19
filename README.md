@@ -1,5 +1,3 @@
-Claro, Leandro! Aqui está uma sugestão de README mais estruturado e informativo para o seu projeto Teste-api-Robot-AT, com foco em clareza, organização e profissionalismo:
-
 🧪 Teste API com Robot Framework
 Este projeto demonstra a automação de testes de API utilizando o Robot Framework, abordando três cenários distintos para validar funcionalidades e garantir a qualidade das respostas.
 
