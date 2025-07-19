@@ -73,12 +73,31 @@ Buscar produto por nome
 Deleta produto por ID
     [Arguments]    ${ID_PRODUTO}
 
+    ${HEADERS}=    Create Dictionary    Content-Type=application/json    Authorization=Bearer ${TOKEN}
+
+
     ${RESPONSE}    DELETE            
-    ...           url= ${URL_SERVERREST}${CAMINHO_CADASTRO_PRODUTO}/${ID_PRODUTO}
-    Should Be True  ${response.status_code} == 200 or ${response.status_code} == 201            
+    ...            url=${URL_SERVERREST}${CAMINHO_CADASTRO_PRODUTO}/${ID_PRODUTO}
+    ...            headers=${HEADERS}
+    Should Be True  ${response.status_code} == 200 or ${response.status_code} == 201 
+
     Log            ${RESPONSE.json()}    
 
 
+# Deletar Produto Por ID
+#   [Arguments]    ${ID_PRODUTO}
+    
+#     ${HEADERS}=    Create Dictionary
+#     ...            Content-Type=application/json
+#     ...            Authorization=Bearer ${TOKEN}
+
+#     ${RESPONSE}=    Delete 
+#     ...             url=${URL_SERVERREST}${CAMINHO_CADASTRO_PRODUTO}/${ID_PRODUTO}
+#     ...             headers=${HEADERS}
+
+#     Should Be True    ${RESPONSE.status_code} == 200 or ${RESPONSE.status_code} == 201
+#     ${RESPONSE_JSON}=    To Json    ${RESPONSE.content}
+#     Log    ${RESPONSE_JSON}
 
 
 

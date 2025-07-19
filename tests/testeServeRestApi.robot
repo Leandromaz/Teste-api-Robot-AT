@@ -16,7 +16,7 @@ Cadastrar Usuario
  # robot -d ./Logs -i cadastrar_produto  tests   
 Cadastrar Produtos
     [Tags]    cadastrar_produto
-    Cadastrar Produtos    cadastrarProduto    play Station 2    1600    play Station    200
+    Cadastrar Produtos    cadastrarProduto    play Station 6    1600    play Station    200
    
 
 # robot -d ./Logs -i alterar_produto  tests 
@@ -33,10 +33,10 @@ Buscar produto por ID
  # robot -d ./Logs -i buscar_produto_nome tests       
 Buscar produto por nome
    [Tags]    buscar_produto_nome
-   Buscar produto por nome       mouse
-   Buscar produto por nome       Rustic Wooden Chicken 
+   Buscar produto por nome       play Station 6
+   
 
 # robot -d ./Logs -i  deleta_produto tests    
 Deleta produto por ID
     [Tags]  deleta_produto
-    Deleta produto por ID    MHGyYQ1t2O5DrR5m
+    Deleta produto por ID        R8fqskgMe7aPpHBi

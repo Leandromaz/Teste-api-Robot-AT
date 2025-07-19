@@ -10,8 +10,7 @@ Resource    ../resources/settings.robot
 *** Variables***
 ${URL_SERVERREST}    https://serverest.dev/
 ${CAMINHO_LOGIN}    login
-${TOKEN}            eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxlYW5kcm90ZXN0ZUBnbWFpbC5jb20iLCJwYXNzd29yZCI6InRlc3RlMTIzIiwiaWF0IjoxNzUyOTUyOTUyLCJleHAiOjE3NTI5NTM1NTJ9.HTYtwPUjUo70kdmnJMOwTZX-CBJsCUX4avx3Cd7gTs0   
-
+${TOKEN}    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxlYW5kcm90ZXN0ZUBnbWFpbC5jb20iLCJwYXNzd29yZCI6InRlc3RlMTIzIiwiaWF0IjoxNzUyOTU0NjQ5LCJleHAiOjE3NTI5NTUyNDl9.EYX3np2EwmrAW3fDzeGPSiL3SHfoEGhGNlyEv0sO7kQ
 
 *** Keywords ***
 
@@ -33,8 +32,8 @@ Realizar Login
     Should Be True  ${response.status_code} == 200 or ${response.status_code} == 201  
     Log    ${RESPONSE.json()} 
           
-    ${TOKEN}   Get From Dictionary    ${RESPONSE.json()}    Authorization
-    Log    Token extraído: ${TOKEN}
+    # ${TOKEN}   Get From Dictionary    ${RESPONSE.json()}    Authorization
+    # Log    Token extraído: ${TOKEN}
 
 
 
