@@ -1,6 +1,6 @@
 {{
-  "nome": "{nome_produto",
-  "preco": 470,
+  "nome": "{nome}",
+  "preco": "{preco}",
   "descricao": "{descricao}",
-  "quantidade": 381
+  "quantidade": "{quantidade}"
 }}

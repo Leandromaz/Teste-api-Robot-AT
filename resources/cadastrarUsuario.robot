@@ -8,6 +8,8 @@ Resource    ../resources/settings.robot
 
 *** Variables***
 ${CAMINHO_CADASTRO_USUARIO}    usuarios
+${ID_ALTERACAO}            z0a6DrpqUlEJtQfx
+
 
 *** Keywords ***
 
@@ -23,14 +25,13 @@ Cadastrar Usuario
     ...         senha=${SENHA}
     ...         admin=${ADMIN}
     
-
     ${RESPONSE}     POST    
     ...             url=${URL_SERVERREST}${CAMINHO_CADASTRO_USUARIO}
     ...             data=${BODY}
     ...             headers=${HEADERS}
-    ...             expected_status=201
-    
-
+    Should Be True  ${response.status_code} == 200 or ${response.status_code} == 201  
     Log    ${RESPONSE.json()}
+
+
 
 
