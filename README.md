@@ -2,7 +2,7 @@
 
 🧪 **Teste de API com Robot Framework**
 
-Este projeto demonstra a automação de testes de API utilizando o **Robot Framework**, abordando três cenários distintos para validar funcionalidades e garantir a qualidade das respostas.
+Este projeto demonstra a automação de testes de API utilizando o **Robot Framework**, abordando alguns cenários distintos para validar funcionalidades e garantir a qualidade das respostas.
 
 > ⚠️ Após realizar o login, copie o token exibido no log e insira-o na variável `${TOKEN}` localizada na pasta `realizaLogin`.  
 > ❗ O token é válido por apenas **10 minutos**.
