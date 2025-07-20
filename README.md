@@ -29,6 +29,7 @@ Automatizar testes de API RESTful com foco em:
 ## 📁 Estrutura do Projeto
 - `Resources/`: Contém os arquivos com todas as **linhas de código** para execução dos testes
 - `Arquivo/Json`: Contém os **dados** utilizados nos testes
+- `Tests`: Contém o arquivo com todos os cenarios de testes
 
 ---
 
